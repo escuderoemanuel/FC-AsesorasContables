@@ -1,0 +1,56 @@
+main {
+  display: flex;
+  flex-direction: column;
+
+  .section {
+    position: relative;
+    min-height: 100vh;
+    padding: 1rem;
+    text-align: center;
+
+    .divContainer {
+      margin: 1rem 0;
+      overflow: hidden;
+
+      .divContainerCard {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 1rem;
+
+        .divCard {
+          margin: 1rem 0;
+          padding: 1rem;
+          background-color: rgba(255, 255, 255, 0.3);
+          border-radius: 5px;
+
+          .title03 {
+            margin: 1rem 0;
+          }
+        }
+        }
+      }  
+  }
+
+  #section01 {
+    background-color: #b4b4b4;
+    color: #000000;
+  }
+
+  #section02 {
+    background-color: #574141;
+  }
+
+  #nuestroTrabajo {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    max-width: 600px;
+    display: inline-block;
+    justify-content: center;
+
+    .title02 {
+      padding: 2rem 0;
+    }
+  }
+}
