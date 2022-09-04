@@ -154,14 +154,13 @@ main .section .divContainer .divContainerCard .divCard {
 main .section .divContainer .divContainerCard .divCard .title03 {
   margin: 1rem 0;
 }
-main #section01 {
-  /* background-color: #157E90; */
+main #nuestroTrabajo {
   background-color: #2FB79A;
 }
-main #section02 {
+main #nuestrosServicios {
   background-color: #009B9C;
 }
-main #nuestroTrabajo {
+main #nuestroTrabajoCard {
   margin: 1rem 0;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.3);
@@ -170,7 +169,7 @@ main #nuestroTrabajo {
   display: inline-block;
   justify-content: center;
 }
-main #nuestroTrabajo .title02 {
+main #nuestroTrabajoCard .title02 {
   padding: 2rem 0;
 }
 
