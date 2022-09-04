@@ -4,10 +4,24 @@
   max-width: 100vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-  .logoPrincipal {
-    max-width: 100%;
-    margin: auto;
-    padding: 1rem;
+  .title01 {
+    font-family: "CollectionFree", sans-serif;
+    font-size: 5em;
+    font-weight: lighter;
+  }
+
+  .subLine {
+    max-width: 350px;
+    margin-bottom: 2rem;
+  }
+
+  .subtitle{
+    font-family: "MClassicFont", sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 4px;
+    font-weight: 600;
   }
 }
