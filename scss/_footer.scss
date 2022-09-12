@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: #FFAB94;
+  background-color: #ffab94;
   color: #f0f0f0;
   max-width: 100vw;
   height: 100vh;
@@ -29,22 +29,22 @@
 
     .iconProp {
       margin-bottom: 1rem;
-    
+
       img {
         margin-bottom: 0.2rem;
-        filter: invert(62%) sepia(0%) saturate(0%) hue-rotate(241deg) brightness(100%) contrast(96%);
+        filter: invert(62%) sepia(0%) saturate(0%) hue-rotate(241deg)
+          brightness(100%) contrast(96%);
         &:hover {
           transform: scale(1.2);
-          filter: invert(25%) sepia(10%) saturate(857%) hue-rotate(208deg) brightness(95%) contrast(87%);
+          filter: invert(25%) sepia(10%) saturate(857%) hue-rotate(208deg)
+            brightness(95%) contrast(87%);
           transition: all 300ms ease;
         }
-    }
-      p {
-      color: #474554;
-      font-weight: bold;
       }
-
-      
+      p {
+        color: #474554;
+        font-weight: bold;
+      }
     }
   }
 
@@ -59,16 +59,23 @@
     padding-top: 1rem;
     position: absolute;
     bottom: 2rem;
+
+    .dev__icon {
+      width: 32px;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: all 200ms ease;
+      }
+    }
   }
 }
 
 @media screen and (max-height: 450px) {
   .footer {
-
     .footerProp {
       height: 200px;
       overflow: scroll;
     }
   }
 }
-
