@@ -2,53 +2,63 @@ main {
   display: flex;
   flex-direction: column;
 
+  .title02 {
+    margin: 2rem 0;
+  }
+
   .section {
     position: relative;
     min-height: 100vh;
+    min-width: 100vw;
     padding: 1rem;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .divContainer {
-      margin: 1rem 0;
+      margin: 0.5rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
       .divContainerCard {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         grid-gap: 1rem;
+        place-content: center;
 
         .divCard {
           margin: 1rem 0;
           padding: 1rem;
           background-color: rgba(255, 255, 255, 0.2);
           border-radius: 20px;
+          min-height: 450px;
 
           .title03 {
-            margin: 1rem 0;
+            margin-bottom: 2rem;
           }
         }
-        }
-      }  
+      }
+    }
   }
 
   #nuestroTrabajo {
-    background-color: #2FB79A;
+    background-color: #74235d;
   }
 
   #nuestrosServicios {
-    background-color: #009B9C;
+    background-color: #50396d;
   }
 
   #nuestroTrabajoCard {
-    margin: 1rem 0;
+    margin: auto;
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     max-width: 600px;
     display: inline-block;
     justify-content: center;
-
-    .title02 {
-      padding: 2rem 0;
-    }
   }
 }
