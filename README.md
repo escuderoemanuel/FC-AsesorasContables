@@ -1,5 +1,8 @@
 # Title: Flores & Castillo • Asesoras Contables
 
+![Project Poster](https://i.ibb.co/5G9SXBW/florescastillo.jpg)
+
+
 Profesional Website
 
 Used technology:
