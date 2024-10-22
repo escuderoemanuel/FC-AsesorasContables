@@ -4,28 +4,37 @@ html {
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 0.9em;
     color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     a {
       text-decoration: none;
     }
 
+    h2 {
+      text-decoration: underline;
+      margin: 2rem 0;
+    }
+
     .upArrow,
     .downArrow {
       display: flex;
-      justify-content: center;
+      // justify-content: center;
       filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(88%)
         hue-rotate(16deg) brightness(116%) contrast(100%);
-      left: 49%;
-      position: absolute;
-      margin: 0.5rem 0;
+      // position: absolute;
     }
 
     .upArrow {
-      top: 0;
+      // top: 0;
+      margin-top: 1rem;
     }
 
     .downArrow {
-      bottom: 0;
+      margin-bottom: 1rem;
     }
+
   }
 }

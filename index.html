@@ -52,24 +52,28 @@
 
 <body>
   <header class="header" id="inicio">
-    <h1 class="title01" data-aos="flip-left" data-aos-duration="2000">
-      Flores & Castillo
-    </h1>
-    <img class="subLine" data-aos="flip-left" data-aos-duration="2000" src="assets/img/LogoPrincipalLinea.png"
-      alt="Linea Subrayado del Título" />
-    <p class="subtitle" data-aos="zoom-in" data-aos-duration="2000">
-      Asesoras Contables
-    </p>
+    <div class='headerContainer'>
+      <h1 class="title01" data-aos="flip-left" data-aos-duration="2000">
+        Flores & Castillo
+      </h1>
+      <img class="subLine" data-aos="flip-left" data-aos-duration="2000" src="assets/img/LogoPrincipalLinea.png"
+        alt="Linea Subrayado del Título" />
+      <p class="subtitle" data-aos="zoom-in" data-aos-duration="2000">
+        Asesoras Contables
+      </p>
+    </div>
     <a href="#nuestroTrabajo">
-      <i class="downArrow fa-2x fa-sharp fa-solid fa-caret-down"></i>
+      <i class="downArrow fa-2x fa-sharp fa-solid fa-caret-down" id='headerDownArrow'></i>
     </a>
   </header>
   <main class="main">
     <section class="section" id="nuestroTrabajo">
-      <a href="#inicio"><i class="upArrow fa-2x fa-solid fa-caret-up"></i></a>
+      <a href="#inicio">
+        <i class="upArrow fa-2x fa-solid fa-caret-up"></i>
+      </a>
+      <h2 class="title02">Nuestro trabajo.</h2>
       <div class="divContainer" data-aos="fade-up" data-aos-duration="2000">
-        <h2 class="title02">Nuestro trabajo.</h2>
-        <div class="divCard" id="nuestroTrabajoCard">
+        <div class="" id="nuestroTrabajoCard">
           <img src="assets/img/work-order.png" alt="Imagen de hojas, postics, herramientas de trabajo" />
           <p>
             Hace ya algunos años que la normativa tributaria argentina es por
@@ -187,52 +191,54 @@
     <a href="#nuestrosServicios">
       <i class="upArrow fa-2x fa-solid fa-caret-up"></i>
     </a>
+    <!-- CLIENT -->
     <h2 class="title02">Contáctanos</h2>
     <div class="footerProp" data-aos="fade-up" data-aos-duration="3000">
-      <div class="icons">
-        <div class="iconProp">
-          <a href="mailto:florescastillo@asesorascontables.com" target="_blank">
-            <img src="assets/ico/email.png" alt="Icono-sobre de email" />
-            <p>florescastillo@asesorascontables.com</p>
-          </a>
-        </div>
 
-        <div class="iconProp">
-          <a href="https://wa.me/5492615692153" target="_blank">
-            <img src="assets/ico/whatsapp.png" alt="Icono de whatsapp" />
-            <p>+54 9 261 569 2153</p>
-          </a>
-        </div>
+      <div class="iconProp">
+        <a href="mailto:florescastillo@asesorascontables.com" target="_blank">
+          <img src="assets/ico/email.png" alt="Icono-sobre de email" />
+        </a>
+        <p>florescastillo@asesorascontables.com</p>
+      </div>
 
-        <div class="iconProp">
-          <a href="https://www.linkedin.com/" target="_blank">
-            <img src="assets/ico/linkedin.png" alt="Icono enlace a LinkedIn" />
-            <p>Natalí R. Flores</p>
-          </a>
-        </div>
+      <div class="iconProp">
+        <a href="https://wa.me/5492615692153" target="_blank">
+          <img src="assets/ico/whatsapp.png" alt="Icono de whatsapp" />
+        </a>
+        <p>+54 9 261 569 2153</p>
+      </div>
 
-        <div class="iconProp">
-          <a href="https://www.linkedin.com/" target="_blank">
-            <img src="assets/ico/linkedin.png" alt="Icono enlace a LinkedIn" />
-            <p>María de los A. Castillo</p>
-          </a>
-        </div>
+      <div class="iconProp">
+        <a href="https://www.linkedin.com/" target="_blank">
+          <img src="assets/ico/linkedin.png" alt="Icono enlace a LinkedIn" />
+        </a>
+        <p>Natalí R. Flores</p>
+      </div>
 
-        <div class="iconProp">
-          <a href="https://goo.gl/maps/RxWa7rbkbUEpR6jQA" target="_blank">
-            <img src="assets/ico/location.png" alt="Icono de gps ubicación" />
-            <p>Primitivo de la Reta 723 Piso 1 Oficina 4</p>
-            <p>Mendoza • Argentina</p>
-          </a>
-        </div>
+      <div class="iconProp">
+        <a href="https://www.linkedin.com/" target="_blank">
+          <img src="assets/ico/linkedin.png" alt="Icono enlace a LinkedIn" />
+        </a>
+        <p>María de los A. Castillo</p>
+      </div>
+
+      <div class="iconProp">
+        <a href="https://goo.gl/maps/RxWa7rbkbUEpR6jQA" target="_blank">
+          <img src="assets/ico/location.png" alt="Icono de gps ubicación" />
+        </a>
+        <p>Primitivo de la Reta 723 Piso 1 Oficina 4</p>
+        <p>Mendoza • Argentina</p>
       </div>
     </div>
-    <section class="section__dev">
+
+    <!-- DEV -->
+    <div class="section__dev">
       <p>• Desarrollado por Emanuel Escudero •</p>
       <a href="https://emanuelescudero.ar" target="_blank" rel='nonopener nonreferrer'>
         <img class="dev__icon" src="https://i.ibb.co/L5M5KFP/Logo2024.png" alt="Enlace al sitio web del desarrollador">
       </a>
-    </section>
+    </div>
   </footer>
 
   <script>

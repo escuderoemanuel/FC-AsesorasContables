@@ -13,24 +13,28 @@ html body {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 0.9em;
   color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 html body a {
   text-decoration: none;
 }
+html body h2 {
+  text-decoration: underline;
+  margin: 2rem 0;
+}
 html body .upArrow,
 html body .downArrow {
   display: flex;
-  justify-content: center;
   filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(88%) hue-rotate(16deg) brightness(116%) contrast(100%);
-  left: 49%;
-  position: absolute;
-  margin: 0.5rem 0;
 }
 html body .upArrow {
-  top: 0;
+  margin-top: 1rem;
 }
 html body .downArrow {
-  bottom: 0;
+  margin-bottom: 1rem;
 }
 
 * {
@@ -42,11 +46,18 @@ html body .downArrow {
 .header {
   background-color: #8b0000;
   height: 100vh;
-  max-width: 100vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+.header .headerContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .header .title01 {
   font-family: "CollectionFree", sans-serif;
@@ -64,30 +75,31 @@ html body .downArrow {
   font-weight: 600;
 }
 
+@media (width < 450px) {
+  .header .title01 {
+    font-size: 3em;
+  }
+  .header .subLine {
+    width: 250px;
+  }
+  .header .subtitle {
+    font-size: 1em;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
   background-color: #8b0038;
-  max-width: 100vw;
-  height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
   text-align: center;
-  position: relative;
   font-weight: 200;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-.footer .title02 {
-  position: absolute;
-  top: 2.5rem;
-  align-self: center;
+  padding: 1rem;
 }
 .footer .footerProp {
-  border-radius: 20px;
   font-size: 1em;
-  margin-top: 2rem;
-  padding: 1rem;
-  position: absolute;
-  top: 4rem;
 }
 .footer .footerProp .iconProp {
   margin-bottom: 1rem;
@@ -108,46 +120,52 @@ html body .downArrow {
   align-self: center;
   color: whitesmoke;
   font-weight: lighter;
-  margin-top: 3rem;
   border-top: 1px solid whitesmoke;
   padding-top: 1rem;
-  position: absolute;
-  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer .section__dev .dev__icon {
-  margin-top: 1rem;
-  width: 32px;
-}
-.footer .section__dev .dev__icon:hover {
-  transform: scale(1.04);
+  margin-left: 1rem;
+  display: flex;
+  width: 24px;
+  height: 24px;
   transition: all 200ms ease;
 }
+.footer .section__dev .dev__icon:hover {
+  transform: scale(1.04) rotate(7deg);
+}
 
-@media screen and (max-height: 450px) {
+@media (width < 450px) {
   .footer .footerProp {
-    height: 200px;
     overflow: scroll;
+  }
+  .footer .section__dev {
+    width: 90vw;
+  }
+  .footer .section__dev .dev__icon {
+    margin-left: 0.5rem;
   }
 }
 main {
   display: flex;
   flex-direction: column;
-}
-main .title02 {
-  margin: 2rem 0;
+  justify-content: center;
+  align-items: center;
 }
 main .section {
   position: relative;
   min-height: 100vh;
-  min-width: 100vw;
-  padding: 1rem;
+  width: 100vw;
   text-align: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 2rem;
 }
 main .section .divContainer {
-  margin: 0.5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
